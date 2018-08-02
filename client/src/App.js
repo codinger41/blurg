@@ -11,6 +11,7 @@ export default class App extends React.Component {
         <html>
           <Route component={Header} />
           <Route component={Router} />
+          <Route component={Footer} />
         </html>
       </BrowserRouter>
     )
