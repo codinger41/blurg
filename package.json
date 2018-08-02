@@ -1,8 +1,32 @@
 {
+  "name": "Blurg",
+  "version": "1.0.0",
+  "description": "Blog post app",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-watch index.js --require babel-register",
+    "test": "mocha tests/app.test.js --exit --require babel-register --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leksyib/TrendX.git"
+  },
+  "author": "leksyib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leksyib/TrendX/issues"
+  },
+  "homepage": "https://github.com/leksyib/TrendX#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "mongoose": "^5.2.6"
+    "mongoose": "^5.2.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "babel-watch": "^2.0.7"
   }
 }

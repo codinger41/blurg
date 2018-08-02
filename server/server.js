@@ -1,10 +1,10 @@
-const express = require('express')
-const path = require('path')
-const mongoose = require('mongoose')
-const dotenv = require('dotenv')
-const bodyParser = require('body-parser')
+import express from 'express'
+import path from 'path'
+import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+import bodyParser from 'body-parser'
 require('babel-polyfill')
-const router = require('./server/routes/index')
+const Router = require('./routes/index')
 dotenv.config()
 
 const app = express()
@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
-app.use('/', router)
+app.use('/', Router)
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
