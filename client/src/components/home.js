@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Home extends React.Component {
   render() {
@@ -8,19 +9,12 @@ export default class Home extends React.Component {
           <article class="io-top_article">
             <div class="io-top_article__content">
               <div class="io-top_article__categories cat">
-                <ul class="post-categories">
-                  <li><a href="">culture</a></li>
-                  <li><a href="">home</a></li>
-                </ul>
               </div>
               <h2 class="io-top_article__title">
-                <a href="single.html">
-                  Victory Comes From Finding Opportunities in Problems
+                <a>
+                  Latest Blurg Posts
                 </a>
               </h2>
-              <div class="io-top_article__date">
-                <span>April 14, 2014 7:05 a.m.</span>
-              </div>
             </div>
           </article>
           <div id="content" class="io-main_content">
@@ -39,10 +33,10 @@ export default class Home extends React.Component {
                 <div class="col-md-11">
                   <div class="io-articles_list">
                     <article class="io-article article_large">
-                      <a href="single.html" class="io-article_content">
+                      <Link to='/single' href="single.html" class="io-article_content">
                         <div class="io-article_thumb"></div>
                         <h3 class="io-article_excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quasi.</h3>
-                      </a>
+                      </Link>
                       <div class="io-article_meta">
                         <div class="io-article_author"><a href="#">codepix.corp</a></div>
                         <div class="io-article_day">14</div>

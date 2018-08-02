@@ -956,7 +956,9 @@ article#single.io-single_article .io-single_thumbnail {
   box-shadow: 0px 15px 100px -35px rgba(0, 0, 0, 0.8), 0px 5px 20px rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-image: url(http://codeforeveryone.esy.es/template_cpx/assets/img/gallery_images/image_2.jpg)
+}
 
 /* #TOC - __FeaturedProjects  */
 /* FEATURED PROJECTS STYLES */
@@ -1520,6 +1522,7 @@ footer#footer.io-main_footer {
   }
   article#single.io-single_article .io-single_thumbnail {
     height: 220px;
+    
   }
   article#single.io-single_article .io-single_top {
     padding-top: 0;

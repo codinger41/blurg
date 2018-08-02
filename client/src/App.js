@@ -8,11 +8,11 @@ export default class App extends React.Component {
   render () {
     return (
       <BrowserRouter>
-        <html>
+        <div>
           <Route component={Header} />
           <Route component={Router} />
           <Route component={Footer} />
-        </html>
+        </div>
       </BrowserRouter>
     )
   }
