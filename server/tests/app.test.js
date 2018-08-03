@@ -5,21 +5,6 @@ const { expect } = chai
 chai.use(chaiHttp)
 
 describe('Blurg API Test', () => {
-  describe('GET /', () => {
-    // Test for undefined routes
-    it(' should Return 404 for unexistent route', (done) => {
-      chai
-        .request(app)
-        .get('/an/undefined/route')
-        .end((err, res) => {
-          expect(res)
-            .to
-            .have
-            .status(404)
-          done()
-      })
-    })
-  })
   describe('GET /movies', () => {
     // Test to get all movies
     it(' should Return an array of movies', (done) => {
