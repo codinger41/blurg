@@ -3,6 +3,9 @@ import Controller from '../controllers/controller'
 const Router = express.Router()
 
 
-Router.post('/esda', Controller.scrapeData)
+Router.post('/movie', Controller.scrapeData)
+Router.get('/movies', Controller.getAllMovies)
+Router.get('/movies/:id', Controller.getOneMovie)
+
 
 module.exports = Router

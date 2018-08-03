@@ -35,3 +35,22 @@ exports.scrapeData = (req, res) => {
     })
   }
 }
+
+exports.getAllMovies = async(req, res) => {
+  const movies = await Movie.find()
+  res.json({
+    movies
+  })
+}
+
+exports.getOneMovie = async (req, res) => {
+  const movie = await Movie.findById(req.params.id)
+  if(movie){
+    res.json(movie)
+  }else{
+    res.json({
+      success: false, 
+      message: 'Movie not found'
+    })
+  }
+}
