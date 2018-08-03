@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/a71e0ff63e1441a0b0c3/maintainability)](https://codeclimate.com/github/leksyib/blurg/maintainability)
+
 # blurg
 Blurg is a simple web app that scrapes data from imdb.com when you supply the url to the imdb movie, then saves the data in mongodb.
 
