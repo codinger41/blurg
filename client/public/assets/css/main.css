@@ -354,7 +354,6 @@ blockquote {
 /* #TOC - __Preloader  */  
 /* PAGE PRELOADER STYLES START */
 .ps_preloader {
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -370,7 +369,7 @@ blockquote {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  z-index: 99999; }
+}
 
 .spinner {
   width: 200px;
