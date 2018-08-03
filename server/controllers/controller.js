@@ -29,13 +29,13 @@ exports.scrapeData = (req, res) => {
         // check if movie exists
         const movie = await Movie.findOne({ title: json.title })
         if(movie){
-          res.json(movie)
+          res.status(200).json(movie)
         }else{
           const newMovie = await Movie.create(json)
-          res.json(newMovie)
+          res.status(200).json(newMovie)
         }
       }else{
-        res.json({
+        res.status(400).json({
           success: false,
           message: 'Url is not valid'
         })
@@ -51,7 +51,7 @@ exports.scrapeData = (req, res) => {
 
 exports.getAllMovies = async(req, res) => {
   const movies = await Movie.find()
-  res.json({
+  res.status(200).json({
     movies
   })
 }
@@ -59,9 +59,9 @@ exports.getAllMovies = async(req, res) => {
 exports.getOneMovie = async (req, res) => {
   const movie = await Movie.findById(req.params.id)
   if(movie){
-    res.json(movie)
+    res.status(200).json(movie)
   }else{
-    res.json({
+    res.status(400).json({
       success: false, 
       message: 'Movie not found'
     })
