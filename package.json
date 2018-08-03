@@ -18,15 +18,22 @@
   },
   "homepage": "https://github.com/leksyib/TrendX#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "dotenv": "^6.0.0",
-    "express": "^4.16.3",
-    "mongoose": "^5.2.6",
+    "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
-    "babel-watch": "^2.0.7"
+    "babel-watch": "^2.0.7",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^6.0.0",
+    "download": "^7.1.0",
+    "express": "^4.16.3",
+    "html-metadata": "^1.7.0",
+    "mongoose": "^5.2.6",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "request-promise-any": "^1.0.5"
   }
 }
