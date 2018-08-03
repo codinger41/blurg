@@ -44,10 +44,10 @@ export default class Home extends React.Component {
                     <div class="col-md-11">
                       <div class="io-articles_list">
                       {
-                        this.state.movies.map((movie, index) => {
+                        this.state.movies.map((movie) => {
                           return (
-                            <article class="io-article article_large">
-                              <Link to='/single' class="io-article_content">
+                            <article class="io-article article_large" key={movie._id} >
+                              <Link to={`/single/${movie._id}`} class="io-article_content">
                                 <div class="io-article_thumb"></div>
                                 <h3 class="io-article_excerpt">{movie.title}</h3>
                               </Link>
@@ -65,7 +65,7 @@ export default class Home extends React.Component {
               </div>
             )
           }
-      </div>
+        </div>
       </div>
     )
   }

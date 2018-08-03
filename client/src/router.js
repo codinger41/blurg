@@ -9,7 +9,7 @@ const Router = () => (
   <div>
     <Switch>
       <Route exact path='/' component={Home} />
-      <Route exact path='/single' component={SinglePost} />
+      <Route exact path='/single/:id' component={SinglePost} />
       <Route path='/new' component={NewPost} />
     </Switch>
   </div>
