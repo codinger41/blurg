@@ -15,3 +15,6 @@ Blurg is a simple web app that scrapes data from imdb.com when you supply the ur
  - `POST` /movie- send url to the movie you want to scrape on imdb, it saves it in mongodb and returns it.
  - `GET /movies` - returns all movies scrapped from imdb.
  - `GET /movies/id` - returns a movie with that id from mongodb
+
+
+You can view a demo of this app here: https://blurgscrape.herokuapp.com/
