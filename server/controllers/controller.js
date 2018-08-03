@@ -27,14 +27,12 @@ exports.scrapeData = (req, res) => {
           })
         }
         // check if movie exists
-        const movie = await Movie.find({ title: json.title })
+        const movie = await Movie.findOne({ title: json.title })
         if(movie){
           res.json(movie)
         }else{
-          // add new movie if it doesn't exist
           const newMovie = await Movie.create(json)
-          console.log(newMovie)
-          res.json(json)
+          res.json(newMovie)
         }
       }else{
         res.json({

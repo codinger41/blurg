@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Spinner from './spinner'
+import Sidebar from './sidebar'
 
 export default class Home extends React.Component {
   constructor(props){
@@ -34,6 +35,7 @@ export default class Home extends React.Component {
               </h2>
             </div>
           </article>
+          <Sidebar/>
           {
             this.state.loading ? (
               <Spinner />

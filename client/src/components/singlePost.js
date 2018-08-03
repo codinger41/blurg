@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Spinner from './spinner'
+import Sidebar from './sidebar'
 
 export default class SinglePost extends React.Component {
   constructor(props){
