@@ -21,9 +21,11 @@ app.use((req, res, next) => {
   next()
 })
 
-// API calls
-app.get('/api/ping', (req, res) => {
-  res.send({ pong: 'pong' })
+// undefined route
+app.get('*', (req, res) => {
+  res.status(404).json({
+    message: 'Endpoint not found'
+  })
 })
 
 if (process.env.NODE_ENV === 'production') {
@@ -44,3 +46,5 @@ app.listen(port, () => {
     console.log('Database connection established')
   })
 })
+
+export default app
